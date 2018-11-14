@@ -6,6 +6,10 @@
  * @link http://chopstack.com
  */
 
+@import "inconsolata-webfont";
+
+$monospace: Inconsolata, monospace;
+
 /*
 pure css setting
 When setting the primary font stack, apply it to the Pure grid units along
@@ -285,7 +289,7 @@ div {
                 margin: 0 5px;
                 padding: 0 5px;
                 background: #f7f8f8;
-                font-family: Menlo, Consolas, monospace !important;
+                font-family: $monospace !important;
             }
             a {
                 color: #01579f;
@@ -327,7 +331,7 @@ div {
                 margin: 0 5px;
                 padding: 0px 5px;
                 background: #f7f8f8;
-                font-family: Menlo, Consolas, monospace !important;
+                font-family: $monospace !important;
             }
             a {
                 color: #01579f;
@@ -877,7 +881,7 @@ figure.highlight,
     .code,
     .tag {
         background-color: inherit;
-        font-family: Menlo, Consolas, monospace;
+        font-family: $monospace;
         border:      none;
         padding:     0;
         margin:      0;
@@ -936,7 +940,7 @@ figure.highlight,
 .gist {
     .line,
     .line-number {
-        font-family: Menlo, Consolas, monospace;
+        font-family: $monospace;
         font-size:   1em;
         margin:      0 0 5px 0;
     }
